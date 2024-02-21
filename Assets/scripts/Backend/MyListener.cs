@@ -70,7 +70,7 @@ public class MyListener : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
 
         string pythonInterpreterPath = "python";
-        string pythonScriptPath = "Assets/server.py";
+        string pythonScriptPath = "server.py";
         
         ProcessStartInfo startInfo = new ProcessStartInfo
         {
