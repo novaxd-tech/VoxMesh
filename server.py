@@ -508,4 +508,4 @@ if __name__ == "__main__":
         t2.start()
         socket_listener()
     except Exception as e:
-        input(f"\n\n{e}")
+        input(f"\n\n\n{e}")
