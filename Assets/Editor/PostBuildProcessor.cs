@@ -11,5 +11,6 @@ class PostBuildProcessor : IPostprocessBuild
     {
         // Copia um arquivo da pasta do projeto para a pasta da build, junto com o jogo construído.
         FileUtil.CopyFileOrDirectory("server.py", path + "server.py");
+        FileUtil.CopyFileOrDirectory("README.md", path + "README.md");
     }
 }
