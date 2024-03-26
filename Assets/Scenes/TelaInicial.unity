@@ -297,7 +297,7 @@ MonoBehaviour:
   connectionPort: 4444
   aiSettings: {fileID: 0}
   deviceSettings: {fileID: 0}
-  startServer: 1
+  startServer: 0
 --- !u!4 &330556932
 Transform:
   m_ObjectHideFlags: 0

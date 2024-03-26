@@ -4,7 +4,6 @@ import colorama
 from  colorama import Fore , Style
 import os
 from time import sleep
-from scapy.all import IP
 from scapy.all import *
 
 
@@ -150,6 +149,7 @@ Seus IPs:
 
         #self.id = id if master == False else socket.gethostbyname(socket.gethostname())
         self.sendCommand("my_id," + self.getMeshId(self.id))
+        self.mesh_running.add(self.id)
 
 
 
@@ -350,9 +350,9 @@ Seus IPs:
 
         #ENVIA O PEDIDO PARA O MESH REI
         elif command[0] == self.PLEA:
-            if self.master:
-                self.sendCommand(command)
-                return
+            #if self.master:
+            #    self.sendCommand(command)
+            #    return
             pkt = Mesh(plea = 1, command_string = f"{','.join(command)}")
             self.sendMessage(pkt, self.master_id)
         
